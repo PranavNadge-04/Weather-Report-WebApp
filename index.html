@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>🌤 Weather Report</h1>
+    <div class="top-controls">
+
+      <form id="searchForm" aria-label="Search city">
+      <input type="text" id="cityInput" placeholder="Enter city..." required 
+        aria-label="City name"/>
+      <button type="submit"><img src="images/search.png"></button>
+      </form>
+
+      <button id="geoBtn">📍 Use My Location</button>
+  
+    </div>
+
+    
+
+    <div class="favorites">
+      <h3>⭐ Favorites</h3>
+      <ul id="favoritesList"></ul>
+    </div>
+
+
+    <div id="status" role="status"></div>
+
+    <section id="currentWeather" aria-live="polite"></section>
+    <section id="forecast" class="forecast"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

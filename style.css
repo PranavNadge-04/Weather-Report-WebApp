@@ -1,0 +1,140 @@
+:root {
+  --primary: #4facfe;
+  --bg: #f5f7fa;
+  --card: #ece8e8;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  margin: 0;
+  padding: 20px;
+}
+
+.top-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+  
+  
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+form input {
+  flex: 1;
+  width: 550px;
+  border-radius: 25px;
+  
+}
+
+
+button {
+  padding: 10px 15px;
+  background: var(--primary);
+  border: none;
+  border-radius: 25px;
+  height: 60px;
+  width: 60px;
+  color: white;
+  cursor: pointer;
+}
+
+img {
+    width: 16px;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+  width: 150px;
+  border-radius: 25px;
+}
+
+/* Search button */
+form button {
+  background: #4facfe;
+  color: white;
+  border-radius: 25px;
+}
+
+form button:hover {
+  background: #3a8de0;
+}
+
+/* Geo button */
+#geoBtn {
+  background: #34c759;
+  color: white;
+}
+
+#geoBtn:hover {
+  background: #28a745;
+}
+
+.card {
+  background: var(--card);
+  padding: 15px;
+  border-radius: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.card button {
+  background: #ffcc00;
+  color: #333;
+  margin-bottom: 10px;
+  width: 150px;
+}
+
+.card button:hover {
+  background: #e6b800;
+}
+
+.forecast {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.favorites ul {
+  list-style: none;
+  padding: 0;
+}
+
+.favorites li {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255,255,255,0.8);
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.loading {
+  text-align: center;
+  color: gray;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
